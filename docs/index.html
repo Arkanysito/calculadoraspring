@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora Spring Boot - Documentación</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Documentación completa de la API Calculadora en Spring Boot con Docsify y Swagger.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  
+  <!-- Estilos del Tema Moderno (Mergely o Vue) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  
+  <!-- Fuente Google Fonts Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --theme-color: #4f46e5; /* Indigo elegante */
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+    .sidebar {
+      background-color: #f9fafb;
+      border-right: 1px solid #e5e7eb;
+    }
+    .markdown-section {
+      max-width: 900px;
+    }
+    /* Estilizar código */
+    code {
+      font-family: 'Fira Code', Consolas, Monaco, monospace !important;
+      font-size: 0.9em !important;
+      background-color: #f3f4f6 !important;
+      border-radius: 6px;
+      padding: 0.2em 0.4em !important;
+    }
+    pre code {
+      padding: 1em !important;
+      background-color: #1f2937 !important;
+      color: #f9fafb !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">Cargando la documentación...</div>
+  <script>
+    window.$docsify = {
+      name: '🧮 Calculadora API',
+      repo: 'https://github.com/saferayar/calculadoraspring',
+      loadSidebar: true,
+      subMaxLevel: 3,
+      auto2top: true,
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: 'Buscar...',
+        noData: 'No se encontraron resultados',
+        depth: 6
+      },
+      copyCode: {
+        buttonText: 'Copiar',
+        errorText: 'Error',
+        successText: 'Copiado'
+      }
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- Plugins de búsqueda y copiar código -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+</body>
+</html>
